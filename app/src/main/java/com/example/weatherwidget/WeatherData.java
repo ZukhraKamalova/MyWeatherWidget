@@ -39,7 +39,7 @@ public class WeatherData {
     }
 
     public void getWeatherByGPS() {
-        Log.d("weather_data", "Ð’Ñ‹Ð·Ð²Ð°Ð½ getWeatherByGPS");
+        Log.d("weather_data", "getWeatherByGPS");
 
         LocationManager locationManager = (LocationManager) context.getSystemService(Context.LOCATION_SERVICE);
 

@@ -86,7 +86,7 @@ public class WeatherActivity extends AppCompatActivity {
                 try {
                     onDownloadWeather(result);
                 } catch (Exception ex) {
-                    Toast.makeText(getBaseContext(), "Ð ÐµÐ¿Ñ€Ð°Ð²Ð¸Ð»ÑŒÐ½Ñ‹Ð¹ Ð²Ð²Ð¾Ð´", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getBaseContext(), "", Toast.LENGTH_SHORT).show();
                     Log.d("widget_test", ex.toString());
                 }
             }
@@ -184,7 +184,7 @@ public class WeatherActivity extends AppCompatActivity {
         int temp_value = (int)Math.round(jsonObject.getJSONObject("main").getDouble("temp"));
         temp.setText( (temp_value < 0 ? "-" : "+") + temp_value + "°С");
         String humidity_value = Integer.toString(jsonObject.getJSONObject("main").getInt("humidity"));
-        humidity.setText("Влажность воздуха: "+humidity_value + "%");
+        humidity.setText("Влажность: "+humidity_value + "%");
         int feels_like_value = (int)Math.round(jsonObject.getJSONObject("main").getDouble("feels_like"));
         feels_like.setText("Ощущается как: "+feels_like_value + "°С");
 
@@ -229,7 +229,7 @@ public class WeatherActivity extends AppCompatActivity {
             try{
                 onDownloadWeather(result);
             } catch (Exception ex){
-                Toast.makeText(getBaseContext(), "Ð ÐµÐ¿Ñ€Ð°Ð²Ð¸Ð»ÑŒÐ½Ñ‹Ð¹ Ð²Ð²Ð¾Ð´", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getBaseContext(), "", Toast.LENGTH_SHORT).show();
                 Log.d("widget_test", ex.toString());
             }
         }
