@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/photo_5366232715327823161_y"
+    android:background="@drawable/fon3"
     tools:context=".WeatherActivity">
 
 
@@ -46,7 +46,7 @@
         app:layout_constraintTop_toBottomOf="@id/temp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:text="По ощущениям"/>
+        android:text="Тойгы буенча"/>
     <TextView
         android:id="@+id/humidity"
         android:layout_width="wrap_content"
@@ -54,14 +54,14 @@
         app:layout_constraintTop_toBottomOf="@id/feel"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:text="Влажность"/>
+        android:text="Дымлылык"/>
 
     <EditText
         android:id="@+id/ed_city"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:minHeight="48dp"
-        android:hint="Город"
+        android:hint="Шәһәр"
 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -70,10 +70,10 @@
 
     <Button
         android:id="@+id/btn_find"
-        android:backgroundTint="@android:color/black"
+        android:backgroundTint="@android:color/holo_green_dark"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:text="Узнать погоду"
+        android:text="Һава торышы"
         android:textColorLink="#2F597A"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -82,11 +82,11 @@
     <Button
         android:id="@+id/btn_def_location"
         android:layout_width="wrap_content"
-        android:backgroundTint="@android:color/black"
+        android:backgroundTint="@android:color/holo_green_dark"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/btn_find"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:text="Узнать погоду по геолокации"/>
+        android:text="Геолокация буенча"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
