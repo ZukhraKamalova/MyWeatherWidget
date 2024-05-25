@@ -184,9 +184,9 @@ public class WeatherActivity extends AppCompatActivity {
         int temp_value = (int)Math.round(jsonObject.getJSONObject("main").getDouble("temp"));
         temp.setText( (temp_value < 0 ? "-" : "+") + temp_value + "°С");
         String humidity_value = Integer.toString(jsonObject.getJSONObject("main").getInt("humidity"));
-        humidity.setText("Влажность: "+humidity_value + "%");
+        humidity.setText("Дымлылык: "+humidity_value + "%");
         int feels_like_value = (int)Math.round(jsonObject.getJSONObject("main").getDouble("feels_like"));
-        feels_like.setText("Ощущается как: "+feels_like_value + "°С");
+        feels_like.setText("Тойгы буенча: "+feels_like_value + "°С");
 
 
         String icon = jsonObject.getJSONArray("weather").getJSONObject(0).getString("icon");
